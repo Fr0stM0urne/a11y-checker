@@ -8,6 +8,9 @@ class adb_a11y:
         self.actions = ["previous", "next", "perform_click_action"]
         pass
 
+    def input_text(self, text_input):
+        os.system(f"adb -s {self.deviceID} shell input text {text_input}")
+
     def ally_action(self, action):
         if action not in self.actions:
             print(f"Error: Invalid action {action}.")

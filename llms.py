@@ -1,6 +1,7 @@
-import tiktoken, os, anthropic, sys
+import tiktoken, os, anthropic, sys, re
 from openai import OpenAI
 import google.generativeai as genai
+from termcolor import colored
 
 class a11y_llm():
     def __init__(self, modelName):
@@ -9,6 +10,37 @@ class a11y_llm():
     def token_length(self, data):
         enc = tiktoken.encoding_for_model(self.modelName)
         return len(enc.encode(data))
+
+    def parse_response(self, response):
+        action_data = {"action": None, "data": None}
+        try:
+            observation = re.findall(r"Observation: (.*?)$", response, re.MULTILINE)[0]
+            think = re.findall(r"Thought: (.*?)$", response, re.MULTILINE)[0]
+            act = re.findall(r"Action: (.*?)$", response, re.MULTILINE)[0]
+            # last_act = re.findall(r"Summary: (.*?)$", response, re.MULTILINE)[0]
+            print(colored("Observation:", "yellow"))
+            print(colored(observation, "magenta"))
+            print(colored("Thought:", "yellow"))
+            print(colored(think, "magenta"))
+            print(colored("Action:", "yellow"))
+            print(colored(act, "magenta"))
+            # print(colored("Summary:", "yellow"))
+            # print(colored(last_act, "magenta"))
+            if act.startswith("ally_action"):
+                action_data["action"] = "ally_action"
+                action_data["data"] = re.findall(r'\(\s*"([^"]+)"\s*\)', act)[0]
+            elif act.startswith("input_text"):
+                action_data["action"] = "input_text"
+                action_data["data"] = re.findall(r'\(\s*"([^"]+)"\s*\)', act)[0]
+            elif act.startswith("finish"):
+                action_data["action"] = "finish"
+            else:
+                print(colored(f"UNDEFINED ACTION: {act}" , "red"))
+            return action_data
+        except Exception as e:
+            print(colored(f"ERROR: {e}", "red"))
+            return action_data
+
 
 class openai_gpt(a11y_llm):
     def __init__(self, modelName):
@@ -21,12 +53,12 @@ class openai_gpt(a11y_llm):
     
     def send_message(self, message):
         self.chatHistory.append({"role": "user", "content": message})
-        print(f"Input tokens: {self.token_length(str(self.chatHistory))}")
+        # print(f"Input tokens: {self.token_length(str(self.chatHistory))}")
         completion = self.model.chat.completions.create(
             model=self.modelName,
             messages=self.chatHistory)
         response = completion.choices[0].message.content
-        print(f"Output tokens: {self.token_length(response)}")
+        # print(f"Output tokens: {self.token_length(response)}")
         self.chatHistory.append({"role": "assistant", "content": response})
         self.openai_api_cost(completion.usage, self.modelName)
         return response
@@ -69,7 +101,7 @@ class openai_gpt(a11y_llm):
         # round to 6 decimals
         total_cost = round(total_cost, 6)
 
-        print(f"\nTokens used:  {usage.prompt_tokens:,} prompt + {usage.completion_tokens:,} completion = {usage.total_tokens:,} tokens")
+        # print(f"\nTokens used:  {usage.prompt_tokens:,} prompt + {usage.completion_tokens:,} completion = {usage.total_tokens:,} tokens")
         print(f"Cost {model}: ${total_cost:.4f}\n")
 
 class google_gemini(a11y_llm):

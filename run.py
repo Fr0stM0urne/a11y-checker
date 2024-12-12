@@ -59,9 +59,34 @@ if __name__ == "__main__":
     # Intercept TTS messages
     print("Starting TTS logcat interception...")
     tts_pkg = config.get('a11y', 'tts_pkg')
-    
+    os.system("touch state/tts.on")
+    tts_speech = ""
+    a11y_control_prompt = a11y_control_prompt.replace("<input>", "You are on Uber Eats app. The app is already open. Add a pizza to the cart.")
+    # adb_device.launch_app("com.ubercab.eats")
+    contexted = False
     for sentence in get_tts_word(tts_pkg):
-        print(sentence)
+        if sentence:
+            tts_speech += sentence
+        else:
+            print("TTS: ", tts_speech)
+            if not contexted:
+                a11y_control_prompt = a11y_control_prompt.replace("<tts_output>", tts_speech)
+                llm_response = llm.send_message(a11y_control_prompt)
+                contexted = True
+            else:
+                llm_response = llm.send_message("Screen Reader Output: "+tts_speech)
+            action_data = llm.parse_response(llm_response)
+            if action_data['action'] == 'finish':
+                print("Task completed.")
+                exit()
+            elif action_data['action'] == 'ally_action':
+                adb_device.ally_action(action_data['data'])
+            elif action_data['action'] == 'input_text':
+                adb_device.input_text(action_data['data'])
+            elif action_data['action'] == None:
+                print("Error: No action defined.")
+                exit()
 
-    print(llm.send_message(a11y_control_prompt + "Please give 3 random ally action"))
-
+            tts_speech = ""
+            os.system("touch state/tts.on")
+            
