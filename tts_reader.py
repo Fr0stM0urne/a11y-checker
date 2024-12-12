@@ -19,7 +19,12 @@ def extract_single_word(line):
             return word[:-1]+' '
     return ''
 
-def get_tts_word():
+def get_tts_word(pkg):
+    # Clear logcat
+    os.system('adb logcat -c')
+    pid = '--pid=' + get_pid(pkg)
+    process = subprocess.Popen(['adb', 'logcat', pid], stdout=subprocess.PIPE)
+    sentence = ''
     while True:
         line = process.stdout.readline().decode('utf-8')
         if not line:
@@ -34,7 +39,6 @@ def get_tts_sentence(pkg):
     os.system('adb logcat -c')
     pid = '--pid=' + get_pid(pkg)
     process = subprocess.Popen(['adb', 'logcat', pid], stdout=subprocess.PIPE)
-    sentence = ''
     while True:
         line = process.stdout.readline().decode('utf-8')
         if not line:
@@ -47,4 +51,5 @@ def get_tts_sentence(pkg):
 if __name__ == '__main__':
     # pkg = 'com.google.android.marvin.talkback'
     pkg = 'com.android.talkback4d'
-    get_tts_sentence(pkg)
+    # get_tts_sentence(pkg)
+    get_tts_word(pkg)

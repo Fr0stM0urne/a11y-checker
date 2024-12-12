@@ -2,11 +2,17 @@ import time, subprocess, os, random
 import xml.etree.ElementTree as ET
 from uiautomator import device as uiAutoDevice
 
-class adbUI:
-    def __init__(self, deviceID, uiTreePath):
+class adb_a11y:
+    def __init__(self, deviceID):
         self.deviceID = deviceID
-        self.uiTreePath = uiTreePath
+        self.actions = ["previous", "next", "perform_click_action"]
         pass
+
+    def ally_action(self, action):
+        if action not in self.actions:
+            print(f"Error: Invalid action {action}.")
+        else:
+            os.system(f"adb -s {self.deviceID} shell am broadcast -a com.a11y.adb.{action}")
 
     def install_apk(self, apkPath):
         print("Installing apk...")
@@ -89,59 +95,9 @@ class adbUI:
         y = (int(bounds[1]) + int(bounds[3])) / 2
         return x, y
 
-    def launch_playstore(self, appPkg):
-        print('Launching Play Store...')
-        os.system(f'adb -s {self.deviceID} shell am start -a android.intent.action.VIEW -d "market://details?id={appPkg}"')
-        # Wait for playstore to load
-        storeRetries = 2
-        storeActivities = ["com.android.vending/com.android.vending.AssetBrowserActivity", "com.android.vending/com.google.android.finsky.activities.MainActivity"]
-        while self.get_front_app() not in storeActivities:
-            os.system(f'adb -s {self.deviceID} shell am start -a android.intent.action.VIEW -d "market://details?id={appPkg}"')
-            time.sleep(2)
-            print("Retry launching Play Store...")
-            storeRetries -= 1
-            if storeRetries == 0:
-                return False
-        return True
-
     def tap_element(self, ele):
         x, y = self.get_bounds(ele)
         os.system(f'adb -s {self.deviceID} shell input tap {x} {y}')
-
-    def cannot_install_fix(self):
-        gotItEles = self.get_ui_element(".//node[@text='Got it']", 3)
-        self.tap_element(gotItEles[0])
-        self.close_app("com.android.vending")
-        print("Restarting Play Store...")
-        time.sleep(10)
-
-    # <node index="0" text="Install" resource-id="" class="android.widget.TextView" package="com.android.vending" content-desc="Install" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[486,829][595,884]" />
-    def install_app(self, appPkg):
-        installRetries = 3
-        while installRetries > 0:
-            installRetries -= 1
-            if not self.launch_playstore(appPkg):
-                return "PlayStoreError"
-            installEles = self.get_ui_element(".//node[@content-desc='Install']", 3)
-            if installEles is None or len(installEles) == 0:
-                if len(self.get_ui_element(".//node[@text='Item not found.']", 3)) > 0:
-                    print(f'Error: {appPkg} not found in Play Store.')
-                    return "NotFoundInStore"
-                elif len(self.get_ui_element(".//node[@text='Got it']", 3)) > 0:
-                    self.cannot_install_fix()
-                    continue
-            else:
-                self.tap_element(installEles[0])
-                time.sleep(5)
-                downloadRes = self.wait_for_download(appPkg)
-                if downloadRes != True:
-                    if len(self.get_ui_element(".//node[@text='Got it']", 3)) > 0:
-                        self.cannot_install_fix()
-                        continue
-                    return downloadRes
-                return True
-        return "PlayStoreError"
-        # input(f'Error: Could not find Install button for {appPkg}.\nInstall manually and press Enter to continue...')
 
     def get_installed_pkgs(self, appType):
         if appType == "user":
@@ -152,43 +108,6 @@ class adbUI:
             pkgList = subprocess.check_output(f'adb -s {self.deviceID} shell pm list packages | cut -f 2 -d ":"', shell=True)
         pkgList = pkgList.decode("utf-8").splitlines()
         return pkgList
-
-    def get_download_percentage(self, appPkg):
-        downloadEles = self.get_ui_element(".//node[@index='2']", 2)
-        for ele in downloadEles:
-            if '%' in ele.attrib['content-desc']:
-                print(f"\rDownloading {appPkg}: {ele.attrib['content-desc']}", end="")
-                return int(ele.attrib['content-desc'].replace('%', ''))
-        while True:
-            uninstallEles = self.get_ui_element(".//node[@content-desc='Uninstall']", 2)
-            time.sleep(1)
-            if len(uninstallEles) > 0:
-                print(f"\rDownloading {appPkg}: 100", end="")
-                return 100
-
-    def wait_for_download(self, appPkg):
-        downTimer = 10
-        # while self.get_download_percentage(appPkg) < 70:
-            # continue
-        print("Downloading...")
-        while appPkg not in self.get_installed_pkgs("user"):
-            if downTimer <= 0:
-                return "DownloadError"
-            time.sleep(downTimer)
-            downTimer -= 1
-        
-        installRetry = 3
-        print("Installing...")
-        while True:
-            cancelEles = self.get_ui_element(".//node[@content-desc='Cancel']", 1)
-            if len(cancelEles) == 0 or cancelEles is None:
-                break
-            if installRetry <= 0:
-                return "InstallError"
-            installRetry -= 1
-            time.sleep(3)
-
-        return True
     
     def launch_app(self, appPkg):
         print(f'Launching {appPkg}...')
@@ -217,12 +136,9 @@ class adbUI:
         os.system(f"adb -s {self.deviceID} shell am force-stop {appPkg}")
         os.system(f"adb -s {self.deviceID} uninstall {appPkg}")
     
-    def pull_apk(self, appPkg, appDir):
-        os.system(f"mkdir -p {appDir}")
-        os.system(f"adb -s {self.deviceID} pull $(adb -s {self.deviceID} shell pm path {appPkg} | cut -d ':' -f 2) {appDir}")
 
 if __name__ == "__main__":
-    adbDevice = adbUI("931AY05A0C", "tmp/scrn.xml")
-    adbDevice.install_app("app.pkg")
+    adbDevice = adb_a11y("931AY05A0C", "tmp/scrn.xml")
+    # adbDevice.install_app("app.pkg")
     # from IPython import embed
     # embed()
