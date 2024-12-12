@@ -26,7 +26,7 @@ def get_tts_word(pkg):
     process = subprocess.Popen(['adb', 'logcat', pid], stdout=subprocess.PIPE)
     sentence = ''
     last_word_time = time.time()  # Track the last spoken word's time
-    timeout_threshold = 3
+    timeout_threshold = 5
     while True:
         if glob.glob('state/tts.on') != []:
             line = process.stdout.readline().decode('utf-8')
@@ -36,27 +36,24 @@ def get_tts_word(pkg):
             remaining_time = max(0, timeout_threshold - time_since_last_word)
             
             if remaining_time > 0:
-                print(f"TTS Timeout {remaining_time:.1f} ...", end="\r")
+                print(f"TTS Timeout {remaining_time} ...")
 
             if time_since_last_word > timeout_threshold:
-                if sentence:  # If a sentence is being built, yield it
-                    yield sentence.strip()
-                    sentence = ''
                 os.system("rm -rf state/tts.on")
                 yield None
-                # print("No word spoken for n seconds.")  # Handle timeout event
 
             if not line:
                 break
 
             word = extract_single_word(line)
             if word:
+                print(word)
                 last_word_time = current_time  # Reset the timer when a word is spoken
                 sentence += word
 
             if "talkback: SpeechControllerImpl: No next item, stopping speech queue" in line:
                 if sentence:  # Yield the sentence if speech ends
-                    yield sentence.strip()
+                    yield sentence
                     sentence = ''
         else:
             time.sleep(1)

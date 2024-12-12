@@ -12,10 +12,10 @@ class adb_a11y:
         os.system(f"adb -s {self.deviceID} shell input text {text_input}")
 
     def ally_action(self, action):
-        if action not in self.actions:
-            print(f"Error: Invalid action {action}.")
-        else:
-            os.system(f"adb -s {self.deviceID} shell am broadcast -a com.a11y.adb.{action}")
+        # if action not in self.actions:
+        #     print(f"Error: Invalid action {action}.")
+        # else:
+        os.system(f"adb -s {self.deviceID} shell am broadcast -a com.a11y.adb.{action}")
 
     def install_apk(self, apkPath):
         print("Installing apk...")

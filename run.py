@@ -64,18 +64,25 @@ if __name__ == "__main__":
     a11y_control_prompt = a11y_control_prompt.replace("<input>", "You are on Uber Eats app. The app is already open. Add a pizza to the cart.")
     # adb_device.launch_app("com.ubercab.eats")
     contexted = False
+    adb_device.ally_action("first_in_screen")
     for sentence in get_tts_word(tts_pkg):
         if sentence:
-            tts_speech += sentence
+            tts_speech = tts_speech + " " + sentence
         else:
+            print("\n")
             print("TTS: ", tts_speech)
             if not contexted:
                 a11y_control_prompt = a11y_control_prompt.replace("<tts_output>", tts_speech)
+                print(a11y_control_prompt)
                 llm_response = llm.send_message(a11y_control_prompt)
                 contexted = True
             else:
                 llm_response = llm.send_message("Screen Reader Output: "+tts_speech)
             action_data = llm.parse_response(llm_response)
+            
+            tts_speech = ""
+            os.system("touch state/tts.on")
+            time.sleep(1)
             if action_data['action'] == 'finish':
                 print("Task completed.")
                 exit()
@@ -87,6 +94,5 @@ if __name__ == "__main__":
                 print("Error: No action defined.")
                 exit()
 
-            tts_speech = ""
-            os.system("touch state/tts.on")
+
             
