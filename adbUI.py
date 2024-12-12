@@ -8,42 +8,9 @@ class adbUI:
         self.uiTreePath = uiTreePath
         pass
 
-    def read_local_dir(self, localApkDir):
-        self.localApkDir = localApkDir
-        self.apkDict = {}
-        apkList = os.listdir(localApkDir)
-        for apk in apkList:
-            if apk.endswith(".apk"):
-                self.apkDict[apk.split(".apk")[0]] = "apk"
-            elif apk.endswith(".xapk"):
-                self.apkDict[apk.split(".xapk")[0]] = "xapk"
-
-    def install_xapk(self, apkPath):
-        print("Installing xapk...")
-        unzipPath = "xapkUnzip"
-        os.system("unzip "+apkPath+" -d "+unzipPath)
-        files = os.listdir(unzipPath)
-        cmd = f'adb -s {self.deviceID} install-multiple '
-        for app in files:
-            if app.endswith(".apk"):
-                cmd += f'"{unzipPath}/{app}" '
-        print("Running: "+cmd)
-        os.system(cmd)
-        # os.system("rm -rf "+unzipPath)
-
     def install_apk(self, apkPath):
         print("Installing apk...")
         os.system(f"adb -s {self.deviceID} install -g {apkPath}")
-
-    def install_local_app(self, appPkg):
-        if self.apkDict[appPkg] == "apk":
-            apkPath = f'{self.localApkDir}/{appPkg}.apk'
-            self.install_apk(apkPath)
-            return "apk"
-        elif self.apkDict[appPkg] == "xapk":
-            apkPath = f'{self.localApkDir}/{appPkg}.xapk'
-            self.install_xapk(apkPath)
-            return "xapk"
 
     def generate_test_input(self):
         devOrntCmd = "adb -s " + self.deviceID + " shell dumpsys input | grep 'SurfaceOrientation' |  awk '{ print $2 }'"
@@ -256,6 +223,6 @@ class adbUI:
 
 if __name__ == "__main__":
     adbDevice = adbUI("931AY05A0C", "tmp/scrn.xml")
-    adbDevice.install_app("ai.botify.app")
+    adbDevice.install_app("app.pkg")
     # from IPython import embed
     # embed()
