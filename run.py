@@ -73,7 +73,6 @@ if __name__ == "__main__":
             print("TTS: ", tts_speech)
             if not contexted:
                 a11y_control_prompt = a11y_control_prompt.replace("<tts_output>", tts_speech)
-                print(a11y_control_prompt)
                 llm_response = llm.send_message(a11y_control_prompt)
                 contexted = True
             else:
