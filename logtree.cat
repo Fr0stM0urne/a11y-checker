@@ -1,0 +1,226 @@
+12-17 01:01:56.711 10205 10205 V talkback: TreeDebug: ------------Node tree------------ display 0
+12-17 01:01:56.712 10205 10205 V talkback: TreeDebug: Window: AccessibilityWindowInfo[title=Navigation bar, displayId=0, id=1022, taskId=-1, type=TYPE_SYSTEM, layer=2, region=SkRegion((0,2088,1080,2220)), bounds=Rect(0, 2088 - 1080, 2220), focused=false, active=false, pictureInPicture=false, hasParent=false, isAnchored=false, hasChildren=false]
+12-17 01:01:56.718 10205 10205 V talkback: TreeDebug: (53846)1022.FrameLayout:(0, 2088 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.724 10205 10205 V talkback: TreeDebug:   (54807)1022.FrameLayout:(0, 2088 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.725 10205 10205 V talkback: TreeDebug:     (60573)1022.ImageView:(129, 2088 - 349, 2220):CONTENT{Back}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:clickable
+12-17 01:01:56.726 10205 10205 V talkback: TreeDebug:     (70183)1022.FrameLayout:(430, 2088 - 650, 2220):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action:LABEL:Toggle Overview):focusable:clickable:longClickable
+12-17 01:01:56.726 10205 10205 V talkback: TreeDebug:       (78832)1022.ImageView:(430, 2088 - 650, 2220):CONTENT{Home}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action:LABEL:Toggle Overview):focusable:clickable:longClickable
+12-17 01:01:56.727 10205 10205 V talkback: TreeDebug: Window: AccessibilityWindowInfo[title=null, displayId=0, id=1026, taskId=-1, type=TYPE_SYSTEM, layer=1, region=SkRegion((0,0,1080,66)), bounds=Rect(0, 0 - 1080, 66), focused=false, active=false, pictureInPicture=false, hasParent=false, isAnchored=false, hasChildren=false]
+12-17 01:01:56.733 10205 10205 V talkback: TreeDebug: (280646)1026.FrameLayout:(0, 0 - 1080, 66):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.739 10205 10205 V talkback: TreeDebug:   (870700)1026.FrameLayout:(0, 0 - 1080, 66):PANE{Status bar}:GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.746 10205 10205 V talkback: TreeDebug:     (879349)1026.TextView:(50, 0 - 124, 66):TEXT{1:01}:CONTENT{1:01 AM}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:56.747 10205 10205 V talkback: TreeDebug:     (3140582)1026.ImageView:(124, 0 - 185, 66):CONTENT{Android System notification: USB debugging connected}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.747 10205 10205 V talkback: TreeDebug:     (16236129)1026.ImageView:(185, 0 - 246, 66):CONTENT{APKPure notification:}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.747 10205 10205 V talkback: TreeDebug:     (13578003)1026.ImageView:(246, 0 - 307, 66):CONTENT{Settings notification: 4 unused apps}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.748 10205 10205 V talkback: TreeDebug:     (10568151)1026.ImageView:(307, 0 - 368, 66):CONTENT{Android System notification: Check access settings}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.748 10205 10205 V talkback: TreeDebug:     (901452)1026.ImageView:(751, 2 - 817, 63):CONTENT{Ringer silent.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.749 10205 10205 V talkback: TreeDebug:     (903374)1026.ImageView:(817, 2 - 876, 63):CONTENT{Do Not Disturb}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.750 10205 10205 V talkback: TreeDebug:     (1430963)1026.FrameLayout:(876, 2 - 924, 63):CONTENT{Wifi signal full.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.751 10205 10205 V talkback: TreeDebug:     (905296)1026.FrameLayout:(924, 2 - 965, 63):CONTENT{No phone.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.752 10205 10205 V talkback: TreeDebug:     (889920)1026.LinearLayout:(982, 0 - 1003, 66):CONTENT{Battery charging, 73 percent.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.752 10205 10205 V talkback: TreeDebug: Window: AccessibilityWindowInfo[title=Play Store, displayId=0, id=1019, taskId=79, type=TYPE_APPLICATION, layer=0, region=SkRegion((0,0,1080,2220)), bounds=Rect(0, 0 - 1080, 2220), focused=true, active=true, pictureInPicture=false, hasParent=false, isAnchored=false, hasChildren=false]
+12-17 01:01:56.757 10205 10205 V talkback: TreeDebug: (-2147454791)1019.FrameLayout:(0, 0 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.763 10205 10205 V talkback: TreeDebug:   (37506)1019.ComposeView:(0, 0 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.769 10205 10205 V talkback: TreeDebug:     (38467)1019.View:(0, 0 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.770 10205 10205 V talkback: TreeDebug:       (41071)1019.View:(0, 363 - 1080, 1912):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_FORWARD)(custom action):scrollable:collection#ROWS=-1#COLS=1
+12-17 01:01:56.770 10205 10205 V talkback: TreeDebug:         (41288)1019.TextView:(66, 407 - 685, 473):TEXT{What are you interested in?}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):screenReaderfocusable:supportsTextLocation:heading
+12-17 01:01:56.771 10205 10205 V talkback: TreeDebug:         (41319)1019.TextView:(66, 473 - 1014, 561):TEXT{Select some items to improve your recommendations across Play}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):screenReaderfocusable:supportsTextLocation
+12-17 01:01:56.772 10205 10205 V talkback: TreeDebug:         (41443)1019.View:(210, 605 - 451, 737):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.777 10205 10205 V talkback: TreeDebug:           (1870499299)1019.View:(210, 605 - 451, 737):CONTENT{Social}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.782 10205 10205 V talkback: TreeDebug:           (41598)1019.View:(298, 644 - 407, 699):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.786 10205 10205 V talkback: TreeDebug:           (935270371)1019.CheckBox:(210, 605 - 451, 737):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.787 10205 10205 V talkback: TreeDebug:         (41722)1019.View:(484, 605 - 871, 737):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.793 10205 10205 V talkback: TreeDebug:           (1870499578)1019.View:(484, 605 - 871, 737):CONTENT{Entertainment}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.798 10205 10205 V talkback: TreeDebug:           (41877)1019.View:(572, 644 - 827, 699):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.803 10205 10205 V talkback: TreeDebug:           (935270650)1019.CheckBox:(484, 605 - 871, 737):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.804 10205 10205 V talkback: TreeDebug:         (42001)1019.View:(125, 737 - 539, 869):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.811 10205 10205 V talkback: TreeDebug:           (1870499857)1019.View:(125, 737 - 539, 869):CONTENT{Communication}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.818 10205 10205 V talkback: TreeDebug:           (42156)1019.View:(213, 776 - 495, 831):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.826 10205 10205 V talkback: TreeDebug:           (935270929)1019.CheckBox:(125, 737 - 539, 869):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.827 10205 10205 V talkback: TreeDebug:         (42280)1019.View:(572, 737 - 955, 869):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.836 10205 10205 V talkback: TreeDebug:           (1870500136)1019.View:(572, 737 - 955, 869):CONTENT{Music & audio}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.844 10205 10205 V talkback: TreeDebug:           (42435)1019.View:(660, 776 - 911, 831):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.852 10205 10205 V talkback: TreeDebug:           (935271208)1019.CheckBox:(572, 737 - 955, 869):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.854 10205 10205 V talkback: TreeDebug:         (42559)1019.View:(141, 869 - 443, 1001):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.863 10205 10205 V talkback: TreeDebug:           (1870500415)1019.View:(141, 869 - 443, 1001):CONTENT{Shopping}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.870 10205 10205 V talkback: TreeDebug:           (42714)1019.View:(229, 908 - 399, 963):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.879 10205 10205 V talkback: TreeDebug:           (935271487)1019.CheckBox:(141, 869 - 443, 1001):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.880 10205 10205 V talkback: TreeDebug:         (42838)1019.View:(476, 869 - 940, 1001):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.890 10205 10205 V talkback: TreeDebug:           (1870500694)1019.View:(476, 869 - 940, 1001):CONTENT{Maps & navigation}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.901 10205 10205 V talkback: TreeDebug:           (42993)1019.View:(564, 908 - 896, 963):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.910 10205 10205 V talkback: TreeDebug:           (935271766)1019.CheckBox:(476, 869 - 940, 1001):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.913 10205 10205 V talkback: TreeDebug:         (44202)1019.View:(440, 1001 - 640, 1133):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.924 10205 10205 V talkback: TreeDebug:           (44295)1019.TextView:(440, 1040 - 640, 1095):TEXT{Show more}:CONTENT{Show more}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:56.936 10205 10205 V talkback: TreeDebug:           (935273130)1019.Button:(440, 1012 - 640, 1122):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.939 10205 10205 V talkback: TreeDebug:         (44512)1019.TextView:(66, 1221 - 578, 1287):TEXT{Events happening now}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):screenReaderfocusable:supportsTextLocation:heading
+12-17 01:01:56.941 10205 10205 V talkback: TreeDebug:         (44574)1019.View:(0, 1331 - 1080, 1912):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_FORWARD)(custom action):scrollable:collection#ROWS=-1#COLS=-1
+12-17 01:01:56.953 10205 10205 V talkback: TreeDebug:           (44667)1019.View:(50, 1331 - 1024, 1912):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.964 10205 10205 V talkback: TreeDebug:             (44698)1019.View:(67, 1331 - 1007, 1849):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable
+12-17 01:01:56.966 10205 10205 V talkback: TreeDebug:               (44729)1019.View:invisible:(67, 1331 - 1007, 1745):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.968 10205 10205 V talkback: TreeDebug:               (44915)1019.View:(111, 1683 - 963, 1821):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.970 10205 10205 V talkback: TreeDebug:                 (44946)1019.TextView:(111, 1683 - 963, 1815):TEXT{Compete in the 12 Days of Character.AI holiday contest}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:56.972 10205 10205 V talkback: TreeDebug:               (45039)1019.TextView:(100, 1342 - 365, 1386):TEXT{Ends on 12/24/24}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:56.973 10205 10205 V talkback: TreeDebug:             (45101)1019.View:(67, 1869 - 1007, 1912):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable
+12-17 01:01:56.975 10205 10205 V talkback: TreeDebug:               (45194)1019.View:(227, 1877 - 689, 1912):CONTENT{Character AI: Chat, Talk, Text
+12-17 01:01:56.975 10205 10205 V talkback: TreeDebug: Character.AI
+12-17 01:01:56.975 10205 10205 V talkback: TreeDebug: Teen
+12-17 01:01:56.975 10205 10205 V talkback: TreeDebug: Star rating: 4.3}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:56.977 10205 10205 V talkback: TreeDebug:               (45318)1019.View:(722, 1850 - 1007, 1912):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.978 10205 10205 V talkback: TreeDebug:                 (45411)1019.TextView:(766, 1888 - 875, 1912):TEXT{Install}:CONTENT{Install}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:56.980 10205 10205 V talkback: TreeDebug:                 (45442)1019.Button:(892, 1850 - 1024, 1912):CONTENT{Install on more devices}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action:LABEL:Select a device):focusable:screenReaderfocusable:clickable
+12-17 01:01:56.981 10205 10205 V talkback: TreeDebug:                 (935274246)1019.Button:(722, 1877 - 1007, 1912):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.989 10205 10205 V talkback: TreeDebug:           (45690)1019.View:(1024, 1331 - 1080, 1912):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.991 10205 10205 V talkback: TreeDebug:             (45721)1019.View:(1041, 1331 - 1080, 1849):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable
+12-17 01:01:56.992 10205 10205 V talkback: TreeDebug:               (45752)1019.View:invisible:(1041, 1331 - 1080, 1745):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:56.994 10205 10205 V talkback: TreeDebug:               (46062)1019.TextView:(1074, 1342 - 1080, 1386):TEXT{Update available}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:56.995 10205 10205 V talkback: TreeDebug:             (46124)1019.View:(1041, 1869 - 1080, 1912):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable
+12-17 01:01:56.997 10205 10205 V talkback: TreeDebug:       (39955)1019.View:invisible:(154, 77 - 749, 231):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:clickable
+12-17 01:01:56.998 10205 10205 V talkback: TreeDebug:       (40017)1019.View:(749, 88 - 881, 220):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:57.008 10205 10205 V talkback: TreeDebug:         (40079)1019.View:(782, 121 - 848, 187):CONTENT{Show notifications and offers. 7 new notifications available.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.017 10205 10205 V talkback: TreeDebug:         (40203)1019.View:(828, 116 - 846, 160):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.026 10205 10205 V talkback: TreeDebug:         (935268945)1019.Button:(749, 88 - 881, 220):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.027 10205 10205 V talkback: TreeDebug:       (40234)1019.View:(881, 88 - 1014, 221):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable
+12-17 01:01:57.038 10205 10205 V talkback: TreeDebug:         (57687)1019hsj:invisible:(881, 88 - 1014, 221):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.040 10205 10205 V talkback: TreeDebug:           (58648)1019.FrameLayout:(881, 88 - 1014, 221):CONTENT{Signed in as Storm Rage rages814@gmail.com
+12-17 01:01:57.040 10205 10205 V talkback: TreeDebug: Account and settings.}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:clickable
+12-17 01:01:57.042 10205 10205 V talkback: TreeDebug:       (40296)1019.View:(0, 231 - 1080, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.053 10205 10205 V talkback: TreeDebug:         (40544)1019.View:(0, 231 - 1080, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action):collection#ROWS=1#COLS=4
+12-17 01:01:57.061 10205 10205 V talkback: TreeDebug:           (40606)1019.View:(22, 231 - 243, 363):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:selected:item#rowIndex=0,colIndex=0
+12-17 01:01:57.063 10205 10205 V talkback: TreeDebug:             (40637)1019.TextView:(66, 266 - 199, 321):TEXT{For you}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.064 10205 10205 V talkback: TreeDebug:             (935269534)1019.View:(22, 231 - 243, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.066 10205 10205 V talkback: TreeDebug:           (40668)1019.View:(243, 231 - 523, 363):GRANULARITY{0}(action:FOCUS/CLEAR_A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:accessibilityFocused:item#rowIndex=0,colIndex=1
+12-17 01:01:57.067 10205 10205 V talkback: TreeDebug:             (40699)1019.TextView:(287, 266 - 479, 321):TEXT{Top charts}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.068 10205 10205 V talkback: TreeDebug:             (935269596)1019.View:(243, 231 - 523, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.070 10205 10205 V talkback: TreeDebug:           (40730)1019.View:(523, 231 - 687, 363):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=2
+12-17 01:01:57.071 10205 10205 V talkback: TreeDebug:             (40761)1019.TextView:(567, 266 - 643, 321):TEXT{Kids}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.073 10205 10205 V talkback: TreeDebug:             (935269658)1019.View:(523, 231 - 687, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.074 10205 10205 V talkback: TreeDebug:           (40792)1019.View:(687, 231 - 972, 363):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=3
+12-17 01:01:57.075 10205 10205 V talkback: TreeDebug:             (40823)1019.TextView:(731, 266 - 928, 321):TEXT{Categories}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.076 10205 10205 V talkback: TreeDebug:             (935269720)1019.View:(687, 231 - 972, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.077 10205 10205 V talkback: TreeDebug:       (38622)1019.View:(0, 1912 - 1080, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.086 10205 10205 V talkback: TreeDebug:         (38653)1019.View:(0, 1912 - 1080, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action):collection#ROWS=1#COLS=5
+12-17 01:01:57.098 10205 10205 V talkback: TreeDebug:           (38684)1019.View:(0, 1912 - 216, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=0
+12-17 01:01:57.107 10205 10205 V talkback: TreeDebug:             (48077)1019hsj:invisible:(75, 1940 - 141, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.108 10205 10205 V talkback: TreeDebug:             (38870)1019.TextView:(52, 2017 - 164, 2061):TEXT{Games}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.109 10205 10205 V talkback: TreeDebug:             (935267612)1019.View:(0, 1912 - 216, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.110 10205 10205 V talkback: TreeDebug:           (38901)1019.View:(216, 1912 - 432, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:selected:item#rowIndex=0,colIndex=1
+12-17 01:01:57.119 10205 10205 V talkback: TreeDebug:             (49999)1019hsj:invisible:(291, 1940 - 357, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.128 10205 10205 V talkback: TreeDebug:             (39087)1019.TextView:(284, 2017 - 365, 2061):TEXT{Apps}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.137 10205 10205 V talkback: TreeDebug:             (935267829)1019.View:(216, 1912 - 432, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.139 10205 10205 V talkback: TreeDebug:           (39118)1019.View:(432, 1912 - 648, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=2
+12-17 01:01:57.149 10205 10205 V talkback: TreeDebug:             (51921)1019hsj:invisible:(507, 1940 - 573, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.159 10205 10205 V talkback: TreeDebug:             (39304)1019.TextView:(484, 2017 - 596, 2061):TEXT{Search}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.168 10205 10205 V talkback: TreeDebug:             (935268046)1019.View:(432, 1912 - 648, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.169 10205 10205 V talkback: TreeDebug:           (39335)1019.View:(648, 1912 - 864, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=3
+12-17 01:01:57.179 10205 10205 V talkback: TreeDebug:             (53843)1019hsj:invisible:(723, 1940 - 789, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.189 10205 10205 V talkback: TreeDebug:             (39521)1019.TextView:(706, 2017 - 806, 2061):TEXT{Offers}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.198 10205 10205 V talkback: TreeDebug:             (935268263)1019.View:(648, 1912 - 864, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.199 10205 10205 V talkback: TreeDebug:           (39552)1019.View:(864, 1912 - 1080, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=4
+12-17 01:01:57.209 10205 10205 V talkback: TreeDebug:             (55765)1019hsj:invisible:(939, 1940 - 1005, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.218 10205 10205 V talkback: TreeDebug:             (39738)1019.TextView:(923, 2017 - 1022, 2061):TEXT{Books}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.227 10205 10205 V talkback: TreeDebug:             (935268480)1019.View:(864, 1912 - 1080, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.228 10205 10205 V talkback: TreeDebug: ------------Node tree traversal order---------- display 0
+12-17 01:01:57.228 10205 10205 V talkback: TreeDebug: Window: AccessibilityWindowInfo[title=Navigation bar, displayId=0, id=1022, taskId=-1, type=TYPE_SYSTEM, layer=2, region=SkRegion((0,2088,1080,2220)), bounds=Rect(0, 2088 - 1080, 2220), focused=false, active=false, pictureInPicture=false, hasParent=false, isAnchored=false, hasChildren=false]
+12-17 01:01:57.242 10205 10205 V talkback: TreeDebug:  (53846)1022.FrameLayout:(0, 2088 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.244 10205 10205 V talkback: TreeDebug:  (54807)1022.FrameLayout:(0, 2088 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.245 10205 10205 V talkback: TreeDebug:  (60573)1022.ImageView:(129, 2088 - 349, 2220):CONTENT{Back}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:clickable
+12-17 01:01:57.246 10205 10205 V talkback: TreeDebug:  (70183)1022.FrameLayout:(430, 2088 - 650, 2220):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action:LABEL:Toggle Overview):focusable:clickable:longClickable after:60573
+12-17 01:01:57.247 10205 10205 V talkback: TreeDebug:  (78832)1022.ImageView:(430, 2088 - 650, 2220):CONTENT{Home}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action:LABEL:Toggle Overview):focusable:clickable:longClickable
+12-17 01:01:57.248 10205 10205 V talkback: TreeDebug: Window: AccessibilityWindowInfo[title=null, displayId=0, id=1026, taskId=-1, type=TYPE_SYSTEM, layer=1, region=SkRegion((0,0,1080,66)), bounds=Rect(0, 0 - 1080, 66), focused=false, active=false, pictureInPicture=false, hasParent=false, isAnchored=false, hasChildren=false]
+12-17 01:01:57.287 10205 10205 V talkback: TreeDebug:  (280646)1026.FrameLayout:(0, 0 - 1080, 66):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.289 10205 10205 V talkback: TreeDebug:  (870700)1026.FrameLayout:(0, 0 - 1080, 66):PANE{Status bar}:GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.290 10205 10205 V talkback: TreeDebug:  (879349)1026.TextView:(50, 0 - 124, 66):TEXT{1:01}:CONTENT{1:01 AM}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.291 10205 10205 V talkback: TreeDebug:  (3140582)1026.ImageView:(124, 0 - 185, 66):CONTENT{Android System notification: USB debugging connected}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.292 10205 10205 V talkback: TreeDebug:  (16236129)1026.ImageView:(185, 0 - 246, 66):CONTENT{APKPure notification:}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.292 10205 10205 V talkback: TreeDebug:  (13578003)1026.ImageView:(246, 0 - 307, 66):CONTENT{Settings notification: 4 unused apps}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.293 10205 10205 V talkback: TreeDebug:  (10568151)1026.ImageView:(307, 0 - 368, 66):CONTENT{Android System notification: Check access settings}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.293 10205 10205 V talkback: TreeDebug:  (901452)1026.ImageView:(751, 2 - 817, 63):CONTENT{Ringer silent.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.294 10205 10205 V talkback: TreeDebug:  (903374)1026.ImageView:(817, 2 - 876, 63):CONTENT{Do Not Disturb}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.295 10205 10205 V talkback: TreeDebug:  (1430963)1026.FrameLayout:(876, 2 - 924, 63):CONTENT{Wifi signal full.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.296 10205 10205 V talkback: TreeDebug:  (905296)1026.FrameLayout:(924, 2 - 965, 63):CONTENT{No phone.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.296 10205 10205 V talkback: TreeDebug:  (889920)1026.LinearLayout:(982, 0 - 1003, 66):CONTENT{Battery charging, 73 percent.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.297 10205 10205 V talkback: TreeDebug: Window: AccessibilityWindowInfo[title=Play Store, displayId=0, id=1019, taskId=79, type=TYPE_APPLICATION, layer=0, region=SkRegion((0,0,1080,2220)), bounds=Rect(0, 0 - 1080, 2220), focused=true, active=true, pictureInPicture=false, hasParent=false, isAnchored=false, hasChildren=false]
+12-17 01:01:57.406 10205 10205 V talkback: TreeDebug:  (-2147454791)1019.FrameLayout:(0, 0 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.407 10205 10205 V talkback: TreeDebug:  (37506)1019.ComposeView:(0, 0 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.407 10205 10205 V talkback: TreeDebug:  (38467)1019.View:(0, 0 - 1080, 2220):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.407 10205 10205 V talkback: TreeDebug:  (41071)1019.View:(0, 363 - 1080, 1912):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_FORWARD)(custom action):scrollable:collection#ROWS=-1#COLS=1
+12-17 01:01:57.407 10205 10205 V talkback: TreeDebug:  (44574)1019.View:(0, 1331 - 1080, 1912):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_FORWARD)(custom action):scrollable:collection#ROWS=-1#COLS=-1
+12-17 01:01:57.407 10205 10205 V talkback: TreeDebug:  (44667)1019.View:(50, 1331 - 1024, 1912):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.408 10205 10205 V talkback: TreeDebug:  (45690)1019.View:(1024, 1331 - 1080, 1912):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.408 10205 10205 V talkback: TreeDebug:  (39955)1019.View:invisible:(154, 77 - 749, 231):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:clickable
+12-17 01:01:57.408 10205 10205 V talkback: TreeDebug:  (40296)1019.View:(0, 231 - 1080, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.408 10205 10205 V talkback: TreeDebug:  (40544)1019.View:(0, 231 - 1080, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action):collection#ROWS=1#COLS=4
+12-17 01:01:57.409 10205 10205 V talkback: TreeDebug:  (38622)1019.View:(0, 1912 - 1080, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.409 10205 10205 V talkback: TreeDebug:  (38653)1019.View:(0, 1912 - 1080, 2088):GRANULARITY{0}(action:A11Y_FOCUS)(custom action):collection#ROWS=1#COLS=5
+12-17 01:01:57.409 10205 10205 V talkback: TreeDebug:  (40017)1019.View:(749, 88 - 881, 220):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:57687
+12-17 01:01:57.409 10205 10205 V talkback: TreeDebug:  (40079)1019.View:(782, 121 - 848, 187):CONTENT{Show notifications and offers. 7 new notifications available.}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.409 10205 10205 V talkback: TreeDebug:  (40203)1019.View:(828, 116 - 846, 160):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.410 10205 10205 V talkback: TreeDebug:  (935268945)1019.Button:(749, 88 - 881, 220):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.410 10205 10205 V talkback: TreeDebug:  (57687)1019hsj:invisible:(881, 88 - 1014, 221):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action) before:40234 after:40017
+12-17 01:01:57.410 10205 10205 V talkback: TreeDebug:  (58648)1019.FrameLayout:(881, 88 - 1014, 221):CONTENT{Signed in as Storm Rage rages814@gmail.com
+12-17 01:01:57.410 10205 10205 V talkback: TreeDebug: Account and settings.}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:clickable
+12-17 01:01:57.410 10205 10205 V talkback: TreeDebug:  (40234)1019.View:(881, 88 - 1014, 221):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:40606 after:57687
+12-17 01:01:57.411 10205 10205 V talkback: TreeDebug:  (40606)1019.View:(22, 231 - 243, 363):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:selected:item#rowIndex=0,colIndex=0 before:40668
+12-17 01:01:57.411 10205 10205 V talkback: TreeDebug:  (40637)1019.TextView:(66, 266 - 199, 321):TEXT{For you}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.411 10205 10205 V talkback: TreeDebug:  (935269534)1019.View:(22, 231 - 243, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.412 10205 10205 V talkback: TreeDebug:  (40668)1019.View:(243, 231 - 523, 363):GRANULARITY{0}(action:FOCUS/CLEAR_A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:accessibilityFocused:item#rowIndex=0,colIndex=1 before:40730
+12-17 01:01:57.412 10205 10205 V talkback: TreeDebug:  (40699)1019.TextView:(287, 266 - 479, 321):TEXT{Top charts}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.412 10205 10205 V talkback: TreeDebug:  (935269596)1019.View:(243, 231 - 523, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.412 10205 10205 V talkback: TreeDebug:  (40730)1019.View:(523, 231 - 687, 363):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=2 before:40792
+12-17 01:01:57.413 10205 10205 V talkback: TreeDebug:  (40761)1019.TextView:(567, 266 - 643, 321):TEXT{Kids}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.413 10205 10205 V talkback: TreeDebug:  (935269658)1019.View:(523, 231 - 687, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.413 10205 10205 V talkback: TreeDebug:  (40792)1019.View:(687, 231 - 972, 363):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=3 before:41288
+12-17 01:01:57.413 10205 10205 V talkback: TreeDebug:  (40823)1019.TextView:(731, 266 - 928, 321):TEXT{Categories}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.414 10205 10205 V talkback: TreeDebug:  (935269720)1019.View:(687, 231 - 972, 363):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.414 10205 10205 V talkback: TreeDebug:  (41288)1019.TextView:(66, 407 - 685, 473):TEXT{What are you interested in?}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):screenReaderfocusable:supportsTextLocation:heading before:41319
+12-17 01:01:57.414 10205 10205 V talkback: TreeDebug:  (41319)1019.TextView:(66, 473 - 1014, 561):TEXT{Select some items to improve your recommendations across Play}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):screenReaderfocusable:supportsTextLocation before:41443
+12-17 01:01:57.414 10205 10205 V talkback: TreeDebug:  (41443)1019.View:(210, 605 - 451, 737):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:41722
+12-17 01:01:57.415 10205 10205 V talkback: TreeDebug:  (1870499299)1019.View:(210, 605 - 451, 737):CONTENT{Social}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.415 10205 10205 V talkback: TreeDebug:  (41598)1019.View:(298, 644 - 407, 699):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.415 10205 10205 V talkback: TreeDebug:  (935270371)1019.CheckBox:(210, 605 - 451, 737):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.415 10205 10205 V talkback: TreeDebug:  (41722)1019.View:(484, 605 - 871, 737):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:42001
+12-17 01:01:57.416 10205 10205 V talkback: TreeDebug:  (1870499578)1019.View:(484, 605 - 871, 737):CONTENT{Entertainment}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.416 10205 10205 V talkback: TreeDebug:  (41877)1019.View:(572, 644 - 827, 699):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.416 10205 10205 V talkback: TreeDebug:  (935270650)1019.CheckBox:(484, 605 - 871, 737):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.416 10205 10205 V talkback: TreeDebug:  (42001)1019.View:(125, 737 - 539, 869):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:42280
+12-17 01:01:57.416 10205 10205 V talkback: TreeDebug:  (1870499857)1019.View:(125, 737 - 539, 869):CONTENT{Communication}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.417 10205 10205 V talkback: TreeDebug:  (42156)1019.View:(213, 776 - 495, 831):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.417 10205 10205 V talkback: TreeDebug:  (935270929)1019.CheckBox:(125, 737 - 539, 869):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.417 10205 10205 V talkback: TreeDebug:  (42280)1019.View:(572, 737 - 955, 869):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:42559
+12-17 01:01:57.417 10205 10205 V talkback: TreeDebug:  (1870500136)1019.View:(572, 737 - 955, 869):CONTENT{Music & audio}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.418 10205 10205 V talkback: TreeDebug:  (42435)1019.View:(660, 776 - 911, 831):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.418 10205 10205 V talkback: TreeDebug:  (935271208)1019.CheckBox:(572, 737 - 955, 869):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.418 10205 10205 V talkback: TreeDebug:  (42559)1019.View:(141, 869 - 443, 1001):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:42838
+12-17 01:01:57.418 10205 10205 V talkback: TreeDebug:  (1870500415)1019.View:(141, 869 - 443, 1001):CONTENT{Shopping}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.418 10205 10205 V talkback: TreeDebug:  (42714)1019.View:(229, 908 - 399, 963):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.419 10205 10205 V talkback: TreeDebug:  (935271487)1019.CheckBox:(141, 869 - 443, 1001):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.419 10205 10205 V talkback: TreeDebug:  (42838)1019.View:(476, 869 - 940, 1001):STATE{Not selected}:GRANULARITY{11}:not checked(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:44202
+12-17 01:01:57.419 10205 10205 V talkback: TreeDebug:  (1870500694)1019.View:(476, 869 - 940, 1001):CONTENT{Maps & navigation}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.419 10205 10205 V talkback: TreeDebug:  (42993)1019.View:(564, 908 - 896, 963):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.419 10205 10205 V talkback: TreeDebug:  (935271766)1019.CheckBox:(476, 869 - 940, 1001):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.420 10205 10205 V talkback: TreeDebug:  (44202)1019.View:(440, 1001 - 640, 1133):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:44512
+12-17 01:01:57.420 10205 10205 V talkback: TreeDebug:  (44295)1019.TextView:(440, 1040 - 640, 1095):TEXT{Show more}:CONTENT{Show more}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.420 10205 10205 V talkback: TreeDebug:  (935273130)1019.Button:(440, 1012 - 640, 1122):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.420 10205 10205 V talkback: TreeDebug:  (44512)1019.TextView:(66, 1221 - 578, 1287):TEXT{Events happening now}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):screenReaderfocusable:supportsTextLocation:heading before:44698
+12-17 01:01:57.421 10205 10205 V talkback: TreeDebug:  (44698)1019.View:(67, 1331 - 1007, 1849):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable before:45101
+12-17 01:01:57.421 10205 10205 V talkback: TreeDebug:  (44729)1019.View:invisible:(67, 1331 - 1007, 1745):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.421 10205 10205 V talkback: TreeDebug:  (44915)1019.View:(111, 1683 - 963, 1821):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.421 10205 10205 V talkback: TreeDebug:  (44946)1019.TextView:(111, 1683 - 963, 1815):TEXT{Compete in the 12 Days of Character.AI holiday contest}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug:  (45039)1019.TextView:(100, 1342 - 365, 1386):TEXT{Ends on 12/24/24}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug:  (45101)1019.View:(67, 1869 - 1007, 1912):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable before:45318
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug:  (45194)1019.View:(227, 1877 - 689, 1912):CONTENT{Character AI: Chat, Talk, Text
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug: Character.AI
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug: Teen
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug: Star rating: 4.3}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action)
+12-17 01:01:57.422 10205 10205 V talkback: TreeDebug:  (45318)1019.View:(722, 1850 - 1007, 1912):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable before:45442
+12-17 01:01:57.423 10205 10205 V talkback: TreeDebug:  (45411)1019.TextView:(766, 1888 - 875, 1912):TEXT{Install}:CONTENT{Install}:GRANULARITY{11}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.423 10205 10205 V talkback: TreeDebug:  (45442)1019.Button:(892, 1850 - 1024, 1912):CONTENT{Install on more devices}:GRANULARITY{11}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action:LABEL:Select a device):focusable:screenReaderfocusable:clickable before:45721
+12-17 01:01:57.423 10205 10205 V talkback: TreeDebug:  (45721)1019.View:(1041, 1331 - 1080, 1849):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable before:46124
+12-17 01:01:57.423 10205 10205 V talkback: TreeDebug:  (45752)1019.View:invisible:(1041, 1331 - 1080, 1745):GRANULARITY{0}(action:A11Y_FOCUS)(custom action)
+12-17 01:01:57.424 10205 10205 V talkback: TreeDebug:  (46062)1019.TextView:(1074, 1342 - 1080, 1386):TEXT{Update available}:GRANULARITY{31}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):supportsTextLocation
+12-17 01:01:57.424 10205 10205 V talkback: TreeDebug:  (46124)1019.View:(1041, 1869 - 1080, 1912):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/LONG_CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:longClickable before:38684
+12-17 01:01:57.424 10205 10205 V talkback: TreeDebug:  (38684)1019.View:(0, 1912 - 216, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/CLICK/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:clickable:item#rowIndex=0,colIndex=0 before:48077
+12-17 01:01:57.425 10205 10205 V talkback: TreeDebug:  (48077)1019hsj:invisible:(75, 1940 - 141, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action) before:38901 after:38684
+12-17 01:01:57.425 10205 10205 V talkback: TreeDebug:  (38901)1019.View:(216, 1912 - 432, 2088):GRANULARITY{0}(action:FOCUS/A11Y_FOCUS/SCROLL_TO_POSITION)(custom action):focusable:screenReaderfocusable:selected:item#rowIndex=0,colIndex=1 before:49999 after:48077
+12-17 01:01:57.425 10205 10205 V talkback: TreeDebug:  (49999)1019hsj:invisible:(291, 1940 - 357, 2006):GRANULARITY{0}(action:A11Y_FOCUS/SCROLL_TO_POSITION)(custom action) before:39118 after:38901
+12-17 01:01:57.426 10205 10205 V talkbac

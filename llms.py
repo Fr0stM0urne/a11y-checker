@@ -34,6 +34,9 @@ class a11y_llm():
                 action_data["data"] = re.findall(r'\(\s*"([^"]+)"\s*\)', act)[0]
             elif act.startswith("finish"):
                 action_data["action"] = "finish"
+            elif act.startswith("tap_element"):
+                action_data["action"] = "tap_element"
+                action_data["data"] = re.findall(r'tap_element\((\d+)\)', act)[0]
             else:
                 print(colored(f"UNDEFINED ACTION: {act}" , "red"))
             return action_data

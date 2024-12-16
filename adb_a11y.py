@@ -1,4 +1,4 @@
-import time, subprocess, os, random
+import time, subprocess, os, random, re
 import xml.etree.ElementTree as ET
 from uiautomator import device as uiAutoDevice
 
@@ -12,10 +12,10 @@ class adb_a11y:
         os.system(f"adb -s {self.deviceID} shell input text {text_input}")
 
     def ally_action(self, action):
-        # if action not in self.actions:
-        #     print(f"Error: Invalid action {action}.")
-        # else:
-        os.system(f"adb -s {self.deviceID} shell am broadcast -a com.a11y.adb.{action}")
+        if action == "print_node_tree":
+            print("Printing node tree...")
+            time.sleep(2)
+        os.system(f"adb -s {self.deviceID} shell am broadcast  -a com.a11y.adb.{action}")
 
     def install_apk(self, apkPath):
         print("Installing apk...")
@@ -139,9 +139,17 @@ class adb_a11y:
         os.system(f"adb -s {self.deviceID} shell am force-stop {appPkg}")
         os.system(f"adb -s {self.deviceID} uninstall {appPkg}")
     
+    def a11y_tap(self, a11y_coords):
+        # (22, 231 - 243, 363)
+        coords_match = re.search(r'\((\d+), (\d+) - (\d+), (\d+)\)', a11y_coords)
+        if coords_match:
+            x = (int(coords_match.group(1)) + int(coords_match.group(3))) // 2
+            y = (int(coords_match.group(2)) + int(coords_match.group(4))) // 2
+
+        os.system(f"adb -s {self.deviceID} shell input tap {x} {y}")
 
 if __name__ == "__main__":
-    adbDevice = adb_a11y("931AY05A0C", "tmp/scrn.xml")
+    adbDevice = adb_a11y("931AY05A0C")
     # adbDevice.install_app("app.pkg")
-    # from IPython import embed
-    # embed()
+    from IPython import embed
+    embed()
