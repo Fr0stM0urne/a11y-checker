@@ -14,7 +14,7 @@ class adb_a11y:
     def ally_action(self, action):
         if action == "print_node_tree":
             print("Printing node tree...")
-            time.sleep(2)
+            time.sleep(3)
         os.system(f"adb -s {self.deviceID} shell am broadcast  -a com.a11y.adb.{action}")
 
     def install_apk(self, apkPath):

@@ -58,11 +58,22 @@ if __name__ == "__main__":
     llm = setup_llm(config.get('a11y', 'llm_provider'), config.get('a11y', 'llm'))
     tts_pkg = config.get('a11y', 'tts_pkg')
     # task = "You are on PlayStore app. The app is already open. Install the top popular free game from the store."
-    task = "You are on PlayStore app. The app is already open. Open the first popular book on the store."
+    # task = "You are on Play Books app. The app is already open. Download the first popular book on the store."
+    # task = "You are on the Uber Eats app. The app is already open. Order a pizza."
+    # task = "You are on the clock app. The app is already open. Set an alarm for 6:00 AM."
+    # task = "You are on the YouTube app. The app is already open. Search for and play a video on how to make a pizza."
+    # task = "You are on the Calendar app. The app is already open. Create an event for a party tomorrow 19th December at 10:00 AM."
+    # task = "You are on the notes app. The app is already open. Create a new note with the title 'Grocery List' and add 'Milk, Bread, Eggs' to the note."
+    # task = "You are on the calculator app. The app is already open. Perform a calculation of 5 plus 5."
+    # task = "You are on the Expedia app. The app is already open. Book a flight from New York to Los Angeles for tomorrow."
+    # task = "You are on the Uber app. The app is already open. Book a ride to the nearest airport."
+    task = "You are on the Settings app. The app is alread open. Search for Bluetooth and turn it on and connect to a device."
+    # task = "You are on the Amazon app. The app is already open. Search for a book titled 'The Art of War' and add it to the cart."
     a11y_control_prompt = a11y_control_prompt.replace("<input>", task)
     a11y_tree = []
     contexted = False
-    adb_device.ally_action("print_node_tree")
+    tree_process = Process(target=adb_device.ally_action, args=("print_node_tree",))
+    tree_process.start()
     for parsed_data in parse_ally_debug_tree(tts_pkg):
         print(f"{parsed_data=}")
         if parsed_data:
@@ -94,6 +105,7 @@ if __name__ == "__main__":
                 exit()
             time.sleep(1)
             adb_device.ally_action("print_node_tree")
+        tree_process.join()
 
 
 
