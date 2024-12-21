@@ -1,7 +1,7 @@
 # Android Accessibility Agent
 
 <p align="center">
-  🤖 An AI-powered accessibility testing framework that simulates visually impaired users' interactions
+  🤖 Agent-Based Accessibility Testing for Applications: Beyond Form to Logic
 </p>
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
@@ -88,14 +88,9 @@ task = "You are on the Uber Eats app. Order a pizza."
 
 We welcome contributions! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Team
 
-Developed for the 2024 Accessibility Hackathon by:
-[Your Team Information]
+Developed for the 2024 Accessibility Hackathon by: [PurSec Lab](https://pursec.cs.purdue.edu/).
 
 ## Acknowledgments
 
